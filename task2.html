@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Admission Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 3px gray;
+        }
+
+        h2 {
+            color: darkgreen;
+            text-align: center;
+            text-transform: capitalize;
+            word-spacing: 5px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+        }
+
+        a {
+            font-size: 18px;
+            color: white;
+            background-color: darkblue;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        form {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid darkblue;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 6px;
+        }
+
+        select {
+            padding: 6px;
+        }
+
+        textarea {
+            padding: 6px;
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .media {
+            text-align: center;
+        }
+
+        .code {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Task 1 Link -->
+
+    <a href="index.html">Task 1</a>
+
+    <h1>University Admission Form</h1>
+
+    <p>
+        Welcome to the University Admission Form. Please enter your
+        personal, contact, academic and other required information.
+        Make sure that all the information provided is correct.
+    </p>
+
+
+    <!-- Admission Form -->
+
+    <form>
+
+        <h2>Personal Information</h2>
+
+        <label>Name:</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <br><br>
+
+
+        <h2>Contact Information</h2>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone">
+        <br><br>
+
+        <label>City:</label>
+
+        <select name="city">
+            <option>Mardan</option>
+            <option>Peshawar</option>
+            <option>Islamabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+        </select>
+
+        <br><br>
+
+        <label>Address:</label>
+        <br>
+
+        <textarea name="address" rows="4" cols="50"></textarea>
+
+        <br><br>
+
+
+        <h2>Academic Information</h2>
+
+        <label>Previous Marks:</label>
+        <input type="number" name="marks">
+
+        <br><br>
+
+        <label>Preferred Program:</label>
+
+        <select name="program">
+
+            <option>Computer Science</option>
+            <option>Computer Software Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Electrical Engineering</option>
+            <option>Civil Engineering</option>
+
+        </select>
+
+        <br><br>
+
+
+        <h2>Interests / Skills</h2>
+
+        <input type="checkbox" name="skill1" value="programming">
+        Programming
+
+        <input type="checkbox" name="skill2" value="web">
+        Web Development
+
+        <input type="checkbox" name="skill3" value="database">
+        Database
+
+        <input type="checkbox" name="skill4" value="design">
+        Designing
+
+        <br><br>
+
+
+        <h2>Profile Picture</h2>
+
+        <label>Upload Picture:</label>
+
+        <input type="file" name="picture">
+
+        <br><br>
+
+
+        <h2>Additional Information</h2>
+
+        <label>
+            Why do you want to join this university?
+        </label>
+
+        <br><br>
+
+        <textarea name="reason" rows="6" cols="60"></textarea>
+
+        <br><br>
+
+
+        <!-- Form Buttons -->
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+    <!-- Student Information Table -->
+
+    <h1>Student Information</h1>
+
+    <table>
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Department</th>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>ali@gmail.com</td>
+            <td>Computer Science</td>
+        </tr>
+
+        <tr>
+            <td>Ahmed</td>
+            <td>Shah</td>
+            <td>ahmed@gmail.com</td>
+            <td>Computer Software Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Hamza</td>
+            <td>Ullah</td>
+            <td>hamza@gmail.com</td>
+            <td>Mechanical Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Usman</td>
+            <td>Ali</td>
+            <td>usman@gmail.com</td>
+            <td>Electrical Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Hassan</td>
+            <td>Ahmad</td>
+            <td>hassan@gmail.com</td>
+            <td>Computer Science</td>
+        </tr>
+
+    </table>
+
+
+    <!-- Iframe, Video and Audio -->
+
+    <div class="media">
+
+        <h1>University Website</h1>
+
+        <iframe
+            src="https://www.uetmardan.edu.pk/"
+            width="600"
+            height="300">
+        </iframe>
+
+
+        <h1>University Video</h1>
+
+        <video width="600" controls>
+
+            <source src="university.mp4" type="video/mp4">
+
+            Your browser does not support video.
+
+        </video>
+
+
+        <h1>University Audio</h1>
+
+        <audio controls>
+
+            <source src="university.mp3" type="audio/mpeg">
+
+            Your browser does not support audio.
+
+        </audio>
+
+    </div>
+
+
+    <!-- Complete HTML Code -->
+
+    <h1>Complete HTML Code</h1>
+
+    <div class="code">
+
+        <pre><code>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Admission Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 3px gray;
+        }
+
+        h2 {
+            color: darkgreen;
+            text-align: center;
+            text-transform: capitalize;
+            word-spacing: 5px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+        }
+
+        a {
+            font-size: 18px;
+            color: white;
+            background-color: darkblue;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        form {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid darkblue;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 6px;
+        }
+
+        select {
+            padding: 6px;
+        }
+
+        textarea {
+            padding: 6px;
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .media {
+            text-align: center;
+        }
+
+        .code {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html">Task 1</a>
+
+    <h1>University Admission Form</h1>
+
+    <p>
+        Welcome to the University Admission Form. Please enter your
+        personal, contact, academic and other required information.
+    </p>
+
+    <form>
+
+        <h2>Personal Information</h2>
+
+        <label>Name:</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        <h2>Contact Information</h2>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone">
+        <br><br>
+
+        <label>City:</label>
+
+        <select name="city">
+            <option>Mardan</option>
+            <option>Peshawar</option>
+            <option>Islamabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+        </select>
+
+        <br><br>
+
+        <label>Address:</label>
+        <br>
+
+        <textarea name="address" rows="4" cols="50"></textarea>
+
+        <br><br>
+
+        <h2>Academic Information</h2>
+
+        <label>Previous Marks:</label>
+        <input type="number" name="marks">
+
+        <br><br>
+
+        <label>Preferred Program:</label>
+
+        <select name="program">
+            <option>Computer Science</option>
+            <option>Computer Software Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Electrical Engineering</option>
+            <option>Civil Engineering</option>
+        </select>
+
+        <br><br>
+
+        <h2>Interests / Skills</h2>
+
+        <input type="checkbox"> Programming
+        <input type="checkbox"> Web Development
+        <input type="checkbox"> Database
+        <input type="checkbox"> Designing
+
+        <br><br>
+
+        <h2>Profile Picture</h2>
+
+        <input type="file" name="picture">
+
+        <br><br>
+
+        <h2>Additional Information</h2>
+
+        <label>Why do you want to join this university?</label>
+
+        <br><br>
+
+        <textarea rows="6" cols="60"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <h1>Student Information</h1>
+
+    <table>
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Department</th>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>Khan</td>
+            <td>ali@gmail.com</td>
+            <td>Computer Science</td>
+        </tr>
+
+        <tr>
+            <td>Ahmed</td>
+            <td>Shah</td>
+            <td>ahmed@gmail.com</td>
+            <td>Software Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Hamza</td>
+            <td>Ullah</td>
+            <td>hamza@gmail.com</td>
+            <td>Information Technology</td>
+        </tr>
+
+        <tr>
+            <td>Usman</td>
+            <td>Ali</td>
+            <td>usman@gmail.com</td>
+            <td>Electrical Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Hassan</td>
+            <td>Ahmad</td>
+            <td>hassan@gmail.com</td>
+            <td>Computer Science</td>
+        </tr>
+
+    </table>
+
+    <div class="media">
+
+        <h1>University Website</h1>
+
+        <iframe
+            src="https://www.uetmardan.edu.pk/"
+            width="600"
+            height="300">
+        </iframe>
+
+        <h1>University Video</h1>
+
+        <video width="600" controls>
+            <source src="university.mp4" type="video/mp4">
+        </video>
+
+        <h1>University Audio</h1>
+
+        <audio controls>
+            <source src="university.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</body>
+</html>
+        </code></pre>
+
+    </div>
+
+</body>
+</html>
